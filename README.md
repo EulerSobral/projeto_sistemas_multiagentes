@@ -1,5 +1,5 @@
 # Nome do Projeto
-> Um nome provisório que resuma bem a ideia. Seja criativo, mas claro!
+> Auditor da realização de um serviço de instalação de fibra óptica
 
 ## 👨‍🎓 Integrantes
 - Euler Pereira Sobral
