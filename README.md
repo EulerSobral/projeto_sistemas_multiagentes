@@ -37,7 +37,7 @@ Exemplo:
 
 ## 🧱 Tecnologias Pretendidas
 - Python
-- LangChain: Construção do bot que envia as mensagens para o empregador e o setor responsável pela documentação do serviço. Também vai ser rensponsável por consetar a legenda foto
+- CrewAI: Construção do bot que envia as mensagens para o empregador e o setor responsável pela documentação do serviço. Também vai ser rensponsável por consetar a legenda foto
 - OpenCV: vai ser o responsável por analisar se a foto está nos padrões exigidos pela empresa, como, por exemplo, identificar se a etiqueta da instalção da fibra óptica foi colocada no cabo
 - Ferramentas para teste, simulação, visualização, etc.
 
