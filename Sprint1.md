@@ -10,7 +10,10 @@ O próximo passo desse projeto é utilizar visão computacional para analisar im
 
 # Ferramentas utilizadas na Sprint 1 
 
-Python 13.13.1 
+Python 13.13.1  
+
 uv 0.7.5 
+
 crewai 0.120.1 
+
 Sistema Operacional Windows 10
