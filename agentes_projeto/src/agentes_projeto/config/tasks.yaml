@@ -1,0 +1,14 @@
+agent_a_task:
+  description: >
+    Research fiber optic network installation techniques on poles {topic}. Gather relevant information that demonstrates efficient and low-cost solutions.
+  expected_output: >
+    A list with 5 bullet points of the most relevant information about {topic}
+  agent: agent_a
+
+agent_b_task:
+  description: >
+    Review the context obtained and point out the positive and negative points in detail.
+  expected_output: >
+    A report with a maximum of five paragraphs.
+    Formatted as markdown without '```'
+  agent: agent_b
