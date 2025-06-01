@@ -1,14 +1,22 @@
-agent_a_task:
-  description: >
-    Research fiber optic network installation techniques on poles {topic}. Gather relevant information that demonstrates efficient and low-cost solutions.
-  expected_output: >
-    A list with 5 bullet points of the most relevant information about {topic}
-  agent: agent_a
+image_analysis_task:
+    description: > 
+      Analyze the image provided and identify posts with and without fiber optics
+    expected_output: > 
+      Analyze the image provided and say whether or not the pole has fiber optics 
+    agent: image_analyst
 
-agent_b_task:
+technician_fiber_optic_task:
+  description: >
+    Research fiber optic network installation techniques on poles {detections}. Gather relevant information that demonstrates efficient and low-cost solutions.
+  expected_output: >
+    A list with 5 bullet points of the most relevant information about {detections}
+  agent: technician_fiber_optic
+
+analyst_fiber_optic_task:
   description: >
     Review the context obtained and point out the positive and negative points in detail.
   expected_output: >
-    A report with a maximum of five paragraphs.
+    A report with a maximum of five paragraphs. 
+    Translate report from brazilian portuguese
     Formatted as markdown without '```'
-  agent: agent_b
+  agent: analyst_fiber_optic

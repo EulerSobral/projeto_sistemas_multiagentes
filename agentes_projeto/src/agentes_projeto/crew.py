@@ -8,32 +8,46 @@ class AgentesProjeto():
     """AgentesProjeto crew"""
 
     agents: List[BaseAgent]
-    tasks: List[Task]
+    tasks: List[Task] 
 
-    @agent
-    def agent_a(self) -> Agent:
+    @agent 
+    def image_analyst(self) -> Agent:
         return Agent(
-            config=self.agents_config['agent_a'],
-            verbose=True
-        )
-
-    @agent
-    def agent_b(self) -> Agent:
-        return Agent(
-            config=self.agents_config['agent_b'], 
+            config=self.agents_config['image_analyst'],
             verbose=True
         )
     
+    @agent
+    def technician_fiber_optic(self) -> Agent:
+        return Agent(
+            config=self.agents_config['technician_fiber_optic'],
+            verbose=True
+        )
+    
+    @agent
+    def analyst_fiber_optic(self) -> Agent:
+        return Agent(
+            config=self.agents_config['analyst_fiber_optic'],
+            verbose=True
+        )
+
+    
     @task
-    def agent_a_task(self) -> Task:
+    def image_analysis_task(self) -> Task:
         return Task(
-            config=self.tasks_config['agent_a_task'], 
+            config=self.tasks_config['image_analysis_task'],
+        )
+    
+    @task
+    def technician_fiber_optic_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['technician_fiber_optic_task'], 
         )
 
     @task
-    def agent_b_task(self) -> Task:
+    def analyst_fiber_optic_task(self) -> Task:
         return Task(
-            config=self.tasks_config['agent_b_task'], 
+            config=self.tasks_config['analyst_fiber_optic_task'], 
             output_file='report.md'
         )
 
