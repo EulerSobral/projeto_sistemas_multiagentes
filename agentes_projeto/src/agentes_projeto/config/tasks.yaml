@@ -1,22 +1,18 @@
+train_image_task:
+    description: > 
+      Estude e compreenda o dataset de imagens que você recebeu 
+      Treine o modelo yolov8n.pt com os seguintes parametros
+       - name: treino de postes 
+      -  epochs: 30 
+    expected_output: > 
+      retorne o valor da categoria da imagem
+    agent: train_analyst
+
 image_analysis_task:
     description: > 
-      Analyze the image provided and identify posts with and without fiber optics
+      Com base no conhecimento do agete train_analyst identfique se a imagem tem ou não fibra optica
     expected_output: > 
-      Analyze the image provided and say whether or not the pole has fiber optics 
+      Analise a imagem e faça um texto sobre fibra optica, se a imagem for da categoria de fibra optica. 
+      Caso a imagem não seja de fibra optica, fale sobre a categoria de postes 
+      Escreva o texto no formato de markdown com '```'
     agent: image_analyst
-
-technician_fiber_optic_task:
-  description: >
-    Research fiber optic network installation techniques on poles {detections}. Gather relevant information that demonstrates efficient and low-cost solutions.
-  expected_output: >
-    A list with 5 bullet points of the most relevant information about {detections}
-  agent: technician_fiber_optic
-
-analyst_fiber_optic_task:
-  description: >
-    Review the context obtained and point out the positive and negative points in detail.
-  expected_output: >
-    A report with a maximum of five paragraphs. 
-    Translate report from brazilian portuguese
-    Formatted as markdown without '```'
-  agent: analyst_fiber_optic
