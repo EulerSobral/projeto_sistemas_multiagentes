@@ -21,10 +21,12 @@ def train():
     Train the crew for a given number of iterations.
     """
     inputs = {
-        'detections': analyze_image(train_model(),r'C:\\Users\\DELL\\Documents\\projeto_sistemas_multiagentes\\dataset\\images\\train\\', 'C:\\Users\\DELL\\Documents\\projeto_sistemas_multiagentes\\dataset\\images\\val\\poste_fibra01.jpg'),
+        'name': 'treino_de_postes',
+        'epochs': 30,
+        'model_arch': 'yolov8n.pt'
     }
     try:
-        AgentesProjeto().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
+        AgentesProjeto().crew().kickoff(inputs=inputs)
 
     except Exception as e:
         raise Exception(f"An error occurred while training the crew: {e}")
@@ -44,7 +46,9 @@ def test():
     Test the crew execution and returns the results.
     """
     inputs = {
-        'detections': analyze_image(train_model(), r'C:\\Users\\DELL\\Documents\\projeto_sistemas_multiagentes\\dataset\\images\\train\\', 'C:\\Users\\DELL\\Documents\\projeto_sistemas_multiagentes\\dataset\\images\\val\\poste_fibra01.jpg'),
+        'name': 'treino_de_postes',
+        'epochs': 30,
+        'model_arch': 'yolov8n.pt'
     }
     
     try:

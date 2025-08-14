@@ -5,14 +5,14 @@ train_image_task:
        - name: treino de postes 
       -  epochs: 30 
     expected_output: > 
-      retorne o valor da categoria da imagem
+      Diga o que você percebeu durante o treinamento de imagens
     agent: train_analyst
 
 image_analysis_task:
     description: > 
-      Com base no conhecimento do agete train_analyst identfique se a imagem tem ou não fibra optica
+      Com base no conhecimento do agete train_analyst fale sobre o ponto de vista dele
     expected_output: > 
-      Analise a imagem e faça um texto sobre fibra optica, se a imagem for da categoria de fibra optica. 
-      Caso a imagem não seja de fibra optica, fale sobre a categoria de postes 
+      Analise a imagem e faça um texto sobre fibra optica, se a imagem for da categoria has fiber optic. 
+      Caso a imagem seja da categoria there is no fiber optics', fale sobre a categoria de postes 
       Escreva o texto no formato de markdown com '```'
     agent: image_analyst
