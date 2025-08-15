@@ -87,6 +87,8 @@ Caso não tenha o crewai instalado em sua máquina, siga os seguintes procedimen
     No Windows: ```bash powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"```
 - Rodando o projeto
 - **OBS: Antes de rodar o projeto, verifique se a sua versão do Python é maior ou equivalente a 3.10**
+- Para fazer uso dos comandos abaixo é necessário que você abra o terminal na pasta agentes_projeto.
+- O comando crewai install só é necessário ser executado na primeira vez que o projeto for utilzado ou caso você deseje atualizar a versão do CrewAI 
 
 ```bash
 crewai install
