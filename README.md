@@ -86,7 +86,7 @@ Caso não tenha o crewai instalado em sua máquina, siga os seguintes procedimen
     Caso seu sistema não utilize o curl, utilize o seguinte comando ```bash wget -qO- https://astral.sh/uv/install.sh | sh```
     No Windows: ```bash powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"```
 - Rodando o projeto
-- **OBS: Antes de rodar o projeto, verifique se a sua verção do Python é maior ou equivalente a 3.10**
+- **OBS: Antes de rodar o projeto, verifique se a sua versão do Python é maior ou equivalente a 3.10**
 
 ```bash
 crewai install
