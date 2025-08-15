@@ -10,7 +10,7 @@ class AgentesProjeto():
     """AgentesProjeto crew"""
 
     agents: List[BaseAgent]
-    tasks: List[Task] 
+    tasks: List[Task]   
 
     @agent 
     def train_analyst(self) -> Agent:
@@ -19,7 +19,7 @@ class AgentesProjeto():
             tools=[ImageTrain],
             verbose=True
         )
-
+                      
     @agent 
     def image_analyst(self) -> Agent:
         return Agent(
@@ -27,12 +27,12 @@ class AgentesProjeto():
             allow_delegation=True,
             verbose=True
         )
-    
+     
     @task
     def train_image_task(self) -> Task:
         return Task(
             config=self.tasks_config['train_image_task']
-        )
+        )    
     
 
     @task

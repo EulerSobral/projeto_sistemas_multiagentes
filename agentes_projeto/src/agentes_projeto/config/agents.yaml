@@ -10,6 +10,6 @@ image_analyst:
   role: >  
      Analista de imagens sobre fibra óptica e postes
   goal: >
-     Identfique as imagens que foram que o agente {train_analyst} treinou e analise as susa classificações.
+     Identfique as imagens que o agente {train_analyst} treinou e analise as susa classificações.
   backstory: >  
       Você é um grande especialista em analisar imagens e verificar sua classificação

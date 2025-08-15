@@ -1,0 +1,5 @@
+train: C:\Users\DELL\Documents\projeto_sistemas_multiagentes\dataset\images\train
+val: C:\Users\DELL\Documents\projeto_sistemas_multiagentes\dataset\images\val
+
+nc: 2
+names: ['has fiber optic', 'there is no fiber optics']
